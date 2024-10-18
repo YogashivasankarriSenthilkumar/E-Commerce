@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import slideReducer from "../features/Slices/sliderSlice.jsx";
+import filterReducer from '../features/Filter/filterSlice.jsx';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    slider: slideReducer,
+   filter: filterReducer,
   },
 });
